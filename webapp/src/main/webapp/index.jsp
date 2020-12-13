@@ -238,8 +238,7 @@ Actual working example:
              # vpc_subnet_id: subnet-29e63245
              # assign_public_ip: yes
              region: us-east-2
-             aws_access_key: AKIAWALSVQWHXZY4NTEDAKIAWALSVQWHXZY4NTED
-             aws_secret_key: FKl2ZNqz4Zcz5X5hjiYom2BOAwttX0HFO3918/bU
+
 
 Another exemple: 
 
@@ -258,8 +257,7 @@ Another exemple:
               #     vpc_subnet_id: subnet-29e63245
               #     assign_public_ip: yes
               region: us-east-2
-              aws_access_key: AKIAWALSVQWHXZY4NTED
-              aws_secret_key: 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
+
               instance_tags:
                              name: ansible-lunch
 
@@ -271,8 +269,7 @@ run: ansible-playbook ec2.yml
 	+ add: 
 [Credentials]    (important must be capital C)
 
-aws_access_key_id: AKIAWALSVQWHXZY4NTED
-aws_secret_access_key: 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
+
 
 -- Set up jenkins for auto ecs deployment with ansible
 
@@ -306,8 +303,7 @@ Explanation : We want to be able to defines what AMI for each server, wht region
               #     vpc_subnet_id: subnet-29e63245
               #     assign_public_ip: yes
               region: "{{ REGION }}"
-              aws_access_key: AKIAWALSVQWHXZY4NTED
-              aws_secret_key: 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
+
               instance_tags:
                              name: "{{ TAG }}"
 
